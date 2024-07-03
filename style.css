@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  max-width: 400px;
+  margin: 10% auto;
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mode-logo {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.todo-item span{
+  display: inline-block;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.todo-item.completed span{
+  text-decoration: line-through;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#add-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #0056b3;
+}
+
+.ToDoSearchBar{
+  width: 375px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.dark-mode {
+  background-color: #06071f;
+  color: #fff;
+}
+
+.dark-mode .todo-item {
+  background-color: #10113e;
+  border-color: #0d0e32;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #f01515;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#del-btn:hover {
+  background-color: #dd0505;
+}
+
+.dark-mode #add-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dark-mode #add-button:hover {
+  background-color: #0056b3;
+}
